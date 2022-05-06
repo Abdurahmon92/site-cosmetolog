@@ -166,6 +166,12 @@
     font-display: swap;
 }
 
+h1, h2, h3, h4, h5, h6,
+p {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -180,6 +186,8 @@ body {
     line-height: 28px;
     color: var(--text-color);
 }
+
+
 
 .container {
     width: 100%;
@@ -328,41 +336,94 @@ body {
 
 .hero {
     background-color: #ECFFEB;
-    padding-top: 28px;
-
+    padding: 71px 96px 138px 114px;
+    display: flex;
+    flex-direction: row;
 }
 
 
 
-.hero-container {
-    position: relative;
-    padding: 28px 96px 0px 119px;
-
-}
+.hero-container {}
 
 .hero-contaent-wraper {}
 
-.hero-content-title-text {}
+.hero-content-title-text {
+    margin-bottom: 0px;
+}
 
-.hero-content-title {}
+.hero-content-title {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 65px;
+    color: var(--grin-color);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
 
-.hero-content-text {}
+.hero-content-text {
+    width: 419px;
+}
 
 .ontent-buttons {}
 
-.content-button {}
+.content-button {
+    padding: 23px 59px;
+    background-color: transparent;
+    color: var(--grin-color);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 16px;
+    cursor: pointer;
+    border: 1px solid var(--grin-color);
+}
+
+.content-button:not(:last-child) {
+    margin-right: 20px;
+}
 
 .active {
     background-color: #55A630;
+    color: #fff;
 }
 
 .hero-img {
     width: 681px;
     height: 556px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
+    margin-bottom: -140px;
 }
 
 /* SECTION HERO END */
+
+/* section white styles */
+.block-with-numbers {
+    width: 1200px;
+    background-color: #fff;
+    padding: 55px 51.36px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+    border-radius: 4px;
+    box-shadow: -2px 2px 20px 0px #42424226;
+}
+
+.numbers-list {
+    display: flex;
+}
+
+.numbers-list-item {
+    list-style: none;
+}
+
+.item-number {
+    color: var(--grin-color);
+    font-style: 45px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.item-text {}
+
+/* section white styles */
 /* SECTION MAIN STYLE END */
