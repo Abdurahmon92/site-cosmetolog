@@ -191,9 +191,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1244px;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -343,7 +341,10 @@ body {
 
 
 
-.hero-container {}
+.hero-container {
+    display: flex;
+    flex-direction: row;
+}
 
 .hero-contaent-wraper {}
 
@@ -368,7 +369,7 @@ body {
 .ontent-buttons {}
 
 .content-button {
-    padding: 23px 59px;
+    padding: 23px 58px;
     background-color: transparent;
     color: var(--grin-color);
     font-family: 'Montserrat', Arial, sans-serif;
@@ -380,7 +381,7 @@ body {
 }
 
 .content-button:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .active {
@@ -392,6 +393,7 @@ body {
     width: 681px;
     height: 556px;
     margin-bottom: -140px;
+
 }
 
 /* SECTION HERO END */
